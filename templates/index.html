@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icon.png">
+
+    <!--Social Media Previews-->
+    <meta property="og:title" content="Brain Bazaar - Your One-Stop Destination for PRECISE STUDY MATERIAL" />
+    <meta property="og:description"
+       content="Brain Bazaar offers a powerful AI-driven Notes Summarizer tool. Easily condense lengthy notes into concise summaries. Explore our educational platform today!"/>
+    <meta property="og:image" content="https://www.brainbazaar.in/assets/images/webpre.jpg" />
+    <meta property="og:url" content="https://www.brainbazaar.in" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Brain Bazaar - Your One-Stop Destination for PRECISE STUDY MATERIAL" />
+    <meta name="twitter:description"
+       content="Brain Bazaar offers a powerful AI-driven Notes Summarizer tool. Easily condense lengthy notes into concise summaries. Explore our educational platform today!"/>
+    <meta name="twitter:image" content="https://www.brainbazaar.in/assets/images/webpre.jpg" />
+    <meta name="twitter:url" content="https://www.brainbazaar.in" />
+    <meta property="linkedin:title" content="Brain Bazaar - Your One-Stop Destination for PRECISE STUDY MATERIAL" />
+    <meta property="linkedin:description"
+       content="Brain Bazaar offers a powerful AI-driven Notes Summarizer tool. Easily condense lengthy notes into concise summaries. Explore our educational platform today!"/>
+    <meta property="linkedin:image" content="https://www.brainbazaar.in/assets/images/webpre.jpg" />
+    <meta property="linkedin:url" content="https://www.brainbazaar.in" />
+ 
+    <!-- Additional meta tags for other platforms -->
+    <meta property="whatsapp:title" content="Brain Bazaar - Study Material Hub" />
+    <meta property="whatsapp:description"
+       content="Get precise study material, microprojects, question banks, and more at Brain Bazaar. Score high in your exams! 📚" />
+    <meta property="whatsapp:image" content="https://www.brainbazaar.in/assets/images/webpre.jpg" />
+ 
+    <meta property="telegram:title" content="Brain Bazaar - Study Material Hub" />
+    <meta property="telegram:description"
+       content="Access precise study material, microprojects, question banks, and more at Brain Bazaar. Achieve academic success! 🚀" />
+    <meta property="telegram:image" content="https://www.brainbazaar.in/assets/images/webpre.jpg" />
+ 
+    <meta property="snapchat:title" content="Brain Bazaar - Study Material Hub" />
+    <meta property="snapchat:image" content="https://www.brainbazaar.in/assets/images/webpre.jpg" />
+    <!-- Snapchat generally uses the image tag for previews -->
+ 
+    <meta property="instagram:title" content="Brain Bazaar - Study Material Hub" />
+    <meta property="instagram:description"
+       content="Unlock precise study material, microprojects, question banks, and more at Brain Bazaar. Excel in your exams! 🌟" />
+    <meta property="instagram:image" content="https://www.brainbazaar.in/assets/images/webpre.jpg" />
+
+
+
+    <title>Brain Bazaar - AI Notes Summarizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            text-align: center;
+            font-size: 18px; /* Increased font size */
+        }
+        .container {
+            max-width: 800px; /* Increased max-width */
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px; /* Increased padding */
+            border-radius: 30px; /* Curved edges */
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.9) -3px -3px 6px 1px inset;
+            position: relative; /* Added position */
+        }
+        .logo {
+            position: absolute; /* Position the logo absolutely */
+            top: 20px; /* Adjusted top position */
+            left: 20px; /* Adjusted left position */
+            width: 50px; /* Set width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px; /* Adjusted margin-bottom */
+        }
+        textarea {
+            width: calc(100% - 40px); /* Adjusting for padding */
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc; /* Increased border width */
+            border-radius: 8px; /* Increased border radius */
+            resize: vertical;
+            outline: none; /* Remove default outline */
+            font-size: 16px; /* Increased font size */
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px; /* Curved edges */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px; /* Increased font size */
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .summary {
+            margin-top: 30px; /* Increased margin-top */
+            text-align: left;
+        }
+        p {
+            margin-top: 15px; /* Spacing between summary and heading */
+        }
+        .small-text {
+            font-size: 14px; /* Increased font size */
+            color: #777;
+        }
+        @media screen and (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+        scale: 95%;
+        padding: 50px; /* Decreased padding */
+    }
+
+    .logo {
+        top: 10px; /* Adjusted top position */
+        left: 10px; /* Adjusted left position */
+        width: 100px; /* Decreased width */
+    }
+
+    h1 {
+        margin-bottom: 10px; /* Adjusted margin-bottom */
+        font-size: 24px; /* Decreased font size */
+    }
+
+    textarea {
+        padding: 10px; /* Decreased padding */
+        font-size: 14px; /* Decreased font size */
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px; /* Decreased padding */
+        font-size: 14px; /* Decreased font size */
+    }
+
+    .summary {
+        margin-top: 20px; /* Decreased margin-top */
+    }
+
+    p {
+        margin-top: 10px; /* Decreased margin-top */
+    }
+
+    .small-text {
+        font-size: 12px; /* Decreased font size */
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/static/logo.png" alt="Logo" style="width: 150px; height: auto;">
+        <h1>Brain Bazaar <br> Notes Summarizer </h1>
+        <p class="small-text">Add notes to be explained in short</p>
+        <form method="POST">
+            <textarea name="input_text" rows="8" placeholder="Enter your text"></textarea>
+            <br>
+            <input type="submit" value="Summarize">
+        </form>
+        {% if summary %}
+            <div class="summary">
+                <h2>Summary:</h2>
+                <p>{{ summary }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
